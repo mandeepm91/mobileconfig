@@ -113,7 +113,9 @@ module.exports = {
             },
 
             contentUuid: options.contentUuid || uuid.v4(),
-            plistUuid: options.plistUuid || uuid.v4()
+            plistUuid: options.plistUuid || uuid.v4(),
+            PreventMove: options.PreventMove ? true : false,
+            allowMailDrop: options.allowMailDrop ? true : false
         };
 
         if (callback) {

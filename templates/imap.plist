@@ -99,13 +99,21 @@
         <false/>
 
         <key>PreventMove</key>
-        <false/>
+        {{#if PreventMove}}
+          <true/>
+        {{ else }}
+          <false/>
+        {{/if}}
 
         <key>SMIMEEnabled</key>
         <false/>
 
         <key>allowMailDrop</key>
-        <true/>
+        {{#if allowMailDrop}}
+          <true/>
+        {{ else }}
+          <false/>
+        {{/if}}
 
       </dict>
     </array>

@@ -10,7 +10,10 @@
         "type": "git",
         "url": "git+https://github.com/andris9/mobileconfig.git"
     },
-    "keywords": ["RFC5652", "SignedData"],
+    "keywords": [
+        "RFC5652",
+        "SignedData"
+    ],
     "author": "Andris Reinman",
     "license": "MIT",
     "bugs": {

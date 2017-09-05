@@ -80,7 +80,9 @@ describe('mobileconfig unit tests', () => {
                 },
 
                 contentUuid: 'abcdef',
-                plistUuid: 'ghijklmn'
+                plistUuid: 'ghijklmn',
+                PreventMove: true,
+                allowMailDrop: true
             };
 
             let emailConfig = plist.parse(mobileconfig.getEmailConfig(options));
@@ -111,7 +113,7 @@ describe('mobileconfig unit tests', () => {
                         PayloadUUID: 'abcdef',
                         PayloadVersion: 1,
                         PreventAppSheet: false,
-                        PreventMove: false,
+                        PreventMove: true,
                         SMIMEEnabled: false,
                         allowMailDrop: true
                     }
